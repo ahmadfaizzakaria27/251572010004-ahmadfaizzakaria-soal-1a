@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NAMA: "Ahmad Faiz Zakaria"
+        NIM: "251572010004"
+        PRODI: "Sistem Informasi"
+        KAMPUS: "STMIK Tazkia"
+        MINAT: "Data Science dan Data Engineering"
+        ALASAN: "Lulusan pesantren yang penasaran dengan dunia IT — ingin mempelajari hal yang belum pernah diajarkan di sana, apalagi di era gempuran AI yang makin tak terbendung."
+        CITA: "Membangun bisnis dengan IT sebagai fondasi utamanya, bekerja secara remote, dan menjadikan ilmu teknologi sebagai sumber penghidupan yang bermakna."
+    container_name: soal1a-faiz
+    ports:
+      - "8091:80"
+    restart: unless-stopped
